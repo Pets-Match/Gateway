@@ -1,0 +1,16 @@
+{
+  "name": "Gateway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "express-http-proxy": "^1.6.3",
+    "helmet": "^6.0.1",
+    "http": "^0.0.1-security"
+  },
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  }
+}
