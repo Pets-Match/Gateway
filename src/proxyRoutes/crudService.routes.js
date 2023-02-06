@@ -1,5 +1,5 @@
 const httpProxy = require("express-http-proxy");
-const pet = httpProxy("http://localhost:6666");
+const pet = httpProxy("http://34.207.221.200:6666");
 
 const crudService = (router) => {
   router.get("/all-owner", (req, res, next) => {

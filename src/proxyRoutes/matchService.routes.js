@@ -1,5 +1,5 @@
 const httpProxy = require("express-http-proxy");
-const match = httpProxy("http://localhost:4000");
+const match = httpProxy("http://34.207.221.200:4000");
 
 const matchService = (router) => {
   router.get("/match-response", (req, res, next) => {
@@ -15,6 +15,10 @@ const matchService = (router) => {
   });
 
   router.post("/pet-bus", (req, res, next) => {
+    match(req, res, next);
+  });
+
+  router.get("/", (req, res, next) => {
     match(req, res, next);
   });
 };
