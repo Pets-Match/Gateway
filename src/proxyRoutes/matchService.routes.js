@@ -10,7 +10,11 @@ const matchService = (router) => {
     match(req, res, next);
   });
 
-  router.post("pet-bus", (req, res, next) => {
+  router.get("/my-matches", (req, res, next) => {
+    match(req, res, next);
+  });
+
+  router.post("/pet-bus", (req, res, next) => {
     match(req, res, next);
   });
 };
